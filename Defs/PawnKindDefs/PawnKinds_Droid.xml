@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PawnKindDefs>
+
+  <PawnKindDef Name="BaseDroidKind" Abstract ="true">
+    <label>droid</label>
+    <race>MD2DroidRace</race>
+    <pointsCost>999999</pointsCost>
+    <defaultFactionType>Colony</defaultFactionType>
+    <baseRecruitDifficulty>60</baseRecruitDifficulty>
+    <backstoryCategory>Civil</backstoryCategory>
+    <isFighter>false</isFighter>
+    <apparelTags>
+      <li>Spacer</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>0</min>
+      <max>0</max>
+    </apparelMoney>
+    <standardBodyGraphicPath>Droids/Bodies/Body1/Body</standardBodyGraphicPath>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="BaseDroidKind">
+    <defName>MD2Droid</defName>
+    <label>Droid</label>
+    <isFighter>true</isFighter>
+  </PawnKindDef>
+
+</PawnKindDefs>

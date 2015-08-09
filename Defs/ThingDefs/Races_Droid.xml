@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  <!-- /////////////Corpse////////////////////-->
+  <ThingDef>
+    <defName>MD2DroidCorpse</defName>
+    <label>dead droid</label>
+    <thingClass>MD2.DroidCorpse</thingClass>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  <!--////////////////////////////////////-->
+
+  <!--      
+  <li>ITab_Pawn_Character</li>
+  <li>ITab_Pawn_Needs</li>
+  <li>ITab_Pawn_Gear</li>
+      -->
+
+  <ThingDef Name="BasePawn" Abstract="True">
+    <thingClass>MD2.Droid</thingClass>
+    <category>Pawn</category>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Pawn</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <hasTooltip>true</hasTooltip>
+    <soundImpactDefault>BulletImpactFlesh</soundImpactDefault>
+    <inspectorTabs>
+      <li>ITab_Pawn_Prisoner</li>
+      <li>MD2.ITab_Droid_Health</li>
+      <li>ITab_Pawn_Gear</li>
+      <li>MD2.ITab_CremationControl</li>
+    </inspectorTabs>
+    <drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+
+  <ThingDef Name="BaseDroid" Abstract="true" ParentName="BasePawn">
+    <label>droid</label>
+    <description>An intelligent droid.</description>
+    <uiIconPath>Things/Pawn/Humanlike/UI/IconHuman</uiIconPath>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MoveSpeed>4.75</MoveSpeed>
+      <Flammability>0.0</Flammability>
+      <MaxHitPoints>100</MaxHitPoints>
+      <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+      <ComfyTemperatureMax>270</ComfyTemperatureMax>
+    </statBases>
+    <comps>
+      <li>
+        <compClass>CompAttachBase</compClass>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <verbClass>Verb_MeleeAttack</verbClass>
+        <defaultCooldownTicks>100</defaultCooldownTicks>
+        <meleeDamageBaseAmount>10</meleeDamageBaseAmount>
+        <meleeDamageDef>Blunt</meleeDamageDef>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+    </verbs>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <race>
+      <thinkTree>MD2DroidThinkTree</thinkTree>
+      <mechanoid>true</mechanoid>
+      <intelligence>ToolUser</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <hasGenders>false</hasGenders>
+      <isFlesh>false</isFlesh>
+      <hasLeather>false</hasLeather>
+      <nameCategory>HumanStandard</nameCategory>
+      <minFoodPreferability>DesperateOnly</minFoodPreferability>
+      <hungerRate>0</hungerRate>
+      <needsRest>false</needsRest>
+      <body>MD2DroidBody</body>
+      <bodySize>1</bodySize>
+      <healthScale>1.5</healthScale>
+      <diet>NeverEats</diet>
+      <soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+      <soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+      <ageGenerationCurve>
+        <points>
+          <li>
+            <loc>(0,0)</loc>
+          </li>
+          <li>
+            <loc>(1,100)</loc>
+          </li>
+          <li>
+            <loc>(5,80)</loc>
+          </li>
+          <li>
+            <loc>(20,0)</loc>
+          </li>
+        </points>
+      </ageGenerationCurve>
+    </race>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseDroid">
+    <defName>MD2DroidRace</defName>
+    <label>droid</label>
+    <description>An intelligent droid.</description>
+  </ThingDef>
+  
+</ThingDefs>

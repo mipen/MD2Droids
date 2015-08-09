@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<JobDefs>
+  <JobDef>
+    <defName>MD2DroidButcherCorpse</defName>
+    <driverClass>MD2.JobDriver_DroidButcher</driverClass>
+    <reportString>Butchering TargetA.</reportString>
+  </JobDef>
+</JobDefs>

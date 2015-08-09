@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <StatDef>
+    <defName>MD2PowerCellMaxStorage</defName>
+    <label>max power storage</label>
+    <description>The maximum power that can be stored in a power cell.</description>
+    <category>BasicsNonPawn</category>
+    <defaultBaseValue>100</defaultBaseValue>
+    <minValue>50</minValue>
+    <roundValue>true</roundValue>
+    <toStringStyle>FloatZero</toStringStyle>
+    <roundToFiveOver>200</roundToFiveOver>
+  </StatDef>
+
+</Defs>

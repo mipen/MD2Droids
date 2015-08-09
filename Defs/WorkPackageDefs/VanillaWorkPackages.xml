@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkPackageDefs>
+
+  <WorkPackageDef Name="BasePackage" Abstract="true">
+    <workAmount>150</workAmount>
+    <packageCost>
+      <Steel>10</Steel>
+      <MD2Circuitry>2</MD2Circuitry>
+    </packageCost>
+  </WorkPackageDef>
+
+  <WorkPackageDef ParentName="BasePackage">
+    <defName>MD2ResearchPackage</defName>
+    <label>Research Package</label>
+    <description>This package allows the droid to perform research-related tasks.</description>
+    <workTypes>
+      <li>Research</li>
+    </workTypes>
+    <PowerRequirement>20</PowerRequirement>
+  </WorkPackageDef>
+
+  <WorkPackageDef ParentName="BasePackage">
+    <defName>MD2LogisticsPackage</defName>
+    <label>Logistics Package</label>
+    <description>This package allows the droid to perform various logistical tasks.</description>
+    <workTypes>
+      <li>Cleaning</li>
+      <li>Hauling</li>
+      <li>Flicker</li>
+    </workTypes>
+    <PowerRequirement>45</PowerRequirement>
+  </WorkPackageDef>
+
+  <WorkPackageDef ParentName="BasePackage">
+    <defName>MD2CraftingPackage</defName>
+    <label>Crafting Package</label>
+    <description>This package allows the droid to perform various crafting tasks.</description>
+    <workTypes>
+      <li>Crafting</li>
+      <li>Tailoring</li>
+      <li>Smithing</li>
+    </workTypes>
+    <PowerRequirement>45</PowerRequirement>
+  </WorkPackageDef>
+
+  <WorkPackageDef ParentName="BasePackage">
+    <defName>MD2MiningPackage</defName>
+    <label>Mining Package</label>
+    <description>This package allows the droid to perform mining tasks.</description>
+    <workTypes>
+      <li>Mining</li>
+    </workTypes>
+    <PowerRequirement>20</PowerRequirement>
+  </WorkPackageDef>
+
+  <WorkPackageDef ParentName="BasePackage">
+    <defName>MD2HorticulturePackage</defName>
+    <label>Horticulture Package</label>
+    <description>This package allows the droid to perform various horticultural tasks.</description>
+    <workTypes>
+      <li>Growing</li>
+      <li>PlantCutting</li>
+    </workTypes>
+    <PowerRequirement>30</PowerRequirement>
+  </WorkPackageDef>
+
+  <WorkPackageDef ParentName="BasePackage">
+    <defName>MD2ConstructionPackage</defName>
+    <label>Construction Package</label>
+    <description>This package allows the droid to perform various construction tasks.</description>
+    <workTypes>
+      <li>Construction</li>
+      <li>Repair</li>
+    </workTypes>
+    <PowerRequirement>30</PowerRequirement>
+  </WorkPackageDef>
+
+  <WorkPackageDef ParentName="BasePackage">
+    <defName>MD2HuntingPackage</defName>
+    <label>Hunting Package</label>
+    <description>This package allows the droid to perform hunting-related tasks.</description>
+    <workTypes>
+      <li>Hunting</li>
+    </workTypes>
+    <PowerRequirement>20</PowerRequirement>
+  </WorkPackageDef>
+
+  <WorkPackageDef ParentName="BasePackage">
+    <defName>MD2HuntingPackage</defName>
+    <label>Hunting Package</label>
+    <description>This package allows the droid to perform hunting-related tasks.</description>
+    <workTypes>
+      <li>Hunting</li>
+    </workTypes>
+    <PowerRequirement>20</PowerRequirement>
+  </WorkPackageDef>
+
+  <WorkPackageDef ParentName="BasePackage">
+    <defName>MD2CookingPackage</defName>
+    <label>Cooking Package</label>
+    <description>This package allows the droid to perform cooking-related tasks.</description>
+    <workTypes>
+      <li>Cooking</li>
+    </workTypes>
+    <PowerRequirement>20</PowerRequirement>
+  </WorkPackageDef>
+
+  <WorkPackageDef ParentName="BasePackage">
+    <defName>MD2MedicalPackage</defName>
+    <label>Medical Package</label>
+    <description>This package allows the droid to perform medical-related tasks.</description>
+    <workTypes>
+      <li>Doctor</li>
+    </workTypes>
+    <PowerRequirement>20</PowerRequirement>
+  </WorkPackageDef>
+
+  <WorkPackageDef>
+    <defName>MD2FirefighterPackage</defName>
+    <label>Firefighter Package</label>
+    <description>This package allows the droid to fight fires. All droids have this package by default.</description>
+    <workTypes>
+      <li>Firefighter</li>
+    </workTypes>
+    <PowerRequirement>0</PowerRequirement>
+    <displayInMenu>false</displayInMenu>
+  </WorkPackageDef>
+
+</WorkPackageDefs>

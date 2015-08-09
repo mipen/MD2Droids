@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GraphicDef>
+    <defName>MD2HeadOne</defName>
+    <label>Head 1</label>
+    <isHead>true</isHead>
+    <graphicData>
+      <texPath>Droids/Heads/Head1/Head</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+  <GraphicDef>
+    <defName>MD2HeadTwo</defName>
+    <label>Head 2</label>
+    <isHead>true</isHead>
+    <graphicData>
+      <texPath>Droids/Heads/Head2/Head</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+  <GraphicDef>
+    <defName>MD2HeadThree</defName>
+    <label>Head 3</label>
+    <isHead>true</isHead>
+    <graphicData>
+      <texPath>Droids/Heads/Head3/Head</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+  <GraphicDef>
+    <defName>MD2HeadFour</defName>
+    <label>Head 4</label>
+    <isHead>true</isHead>
+    <graphicData>
+      <texPath>Droids/Heads/Head4/Head</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+  <GraphicDef>
+    <defName>MD2HeadFive</defName>
+    <label>Head 5</label>
+    <isHead>true</isHead>
+    <graphicData>
+      <texPath>Droids/Heads/Head5/Head</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+  <GraphicDef>
+    <defName>MD2HeadSix</defName>
+    <label>Head 6</label>
+    <isHead>true</isHead>
+    <graphicData>
+      <texPath>Droids/Heads/Head6/Head</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+</Defs>

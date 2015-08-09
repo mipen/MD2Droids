@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkPackageDefs>
+
+  <WorkPackageDef>
+    <defName>MD2CremationPackage</defName>
+    <label>Cremation Package</label>
+    <description>This package allows the droid to perform special cremation tasks.</description>
+    <workTypes>
+      <li>MD2SpecialistJobs</li>
+    </workTypes>
+    <PowerRequirement>50</PowerRequirement>
+    <specialistWorker>MD2.CremationWorker</specialistWorker>
+    <specialist>true</specialist>
+    <workAmount>250</workAmount>
+    <packageCost>
+      <Steel>20</Steel>
+      <Plasteel>5</Plasteel>
+      <MD2Circuitry>5</MD2Circuitry>
+    </packageCost>
+  </WorkPackageDef>
+
+</WorkPackageDefs>

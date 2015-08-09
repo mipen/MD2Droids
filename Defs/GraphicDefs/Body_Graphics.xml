@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GraphicDef>
+    <defName>MD2BodyOne</defName>
+    <label>Body 1</label>
+    <graphicData>
+      <texPath>Droids/Bodies/Body1/Body</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+  <GraphicDef>
+    <defName>MD2BodyTwo</defName>
+    <label>Body 2</label>
+    <graphicData>
+      <texPath>Droids/Bodies/Body2/Body</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+  <GraphicDef>
+    <defName>MD2BodyThree</defName>
+    <label>Body 3</label>
+    <graphicData>
+      <texPath>Droids/Bodies/Body3/Body</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <supportsHead>false</supportsHead>
+  </GraphicDef>
+
+  <GraphicDef>
+    <defName>MD2BodyFour</defName>
+    <label>Body 4</label>
+    <graphicData>
+      <texPath>Droids/Bodies/Body4/Body</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+  <GraphicDef>
+    <defName>MD2BodyFive</defName>
+    <label>Body 5</label>
+    <graphicData>
+      <texPath>Droids/Bodies/Body5/Body</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+  <GraphicDef>
+    <defName>MD2BodySix</defName>
+    <label>Body 6</label>
+    <graphicData>
+      <texPath>Droids/Bodies/Body6/Body</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+  <GraphicDef>
+    <defName>MD2BodySeven</defName>
+    <label>Body 7</label>
+    <graphicData>
+      <texPath>Droids/Bodies/Body7/Body</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <ShaderType>Cutout</ShaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+  </GraphicDef>
+
+</Defs>

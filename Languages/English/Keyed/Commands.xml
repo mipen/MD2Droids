@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <DroidSelfDestructPrompt>Are you sure you want to command this droid to self-destruct? This will destroy the droid and possibly cause an explosion.</DroidSelfDestructPrompt>
+
+  <DisableDescription>Click to disable this droid to save power.</DisableDescription>
+
+  <Disable>Disable</Disable>
+
+  <EnableDescription>Click to enable this droid.</EnableDescription>
+
+  <Enable>Enable</Enable>
+
+  <DeactivateDialog>This will deactivate the droid, causing it to shut down. The only way to reactivate it is to have it hauled to a repair station. Continue?</DeactivateDialog>
+
+  <DeactivateDescription>Click to deactivate the droid.</DeactivateDescription>
+
+  <DeactivateLabel>Deactivate</DeactivateLabel>
+
+  <SelfDestructLabel>Self Destruct</SelfDestructLabel>
+
+  <SelfDestructDescription>Click to make this droid destroy itself.</SelfDestructDescription>
+
+  <DontStripBodies>Don't strip bodies</DontStripBodies>
+
+  <StripBodies>Strip bodies</StripBodies>
+
+  <DontStripBodiesDesc>Click to stop the droid from stripping bodies</DontStripBodiesDesc>
+
+  <StripBodiesDesc>Click to set the droid to strip bodies</StripBodiesDesc>
+
+</LanguageData>

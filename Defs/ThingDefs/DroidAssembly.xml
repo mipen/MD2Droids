@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <DefName>MD2DroidAssemblyStation</DefName>
+    <label>droid assembly station</label>
+    <ThingClass>MD2.AssemblyStation</ThingClass>
+    <Description>A workspace equipped for constructing droids.</Description>
+    <graphicData>
+      <texPath>Buildings/DroidAssembly</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,1)</drawSize>
+    </graphicData>
+    <CostList>
+      <Steel>200</Steel>
+    </CostList>
+    <AltitudeLayer>Waist</AltitudeLayer>
+    <statBases>
+      <WorkToMake>1300</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(3,1)</Size>
+    <DesignationCategory>MD2Droids</DesignationCategory>
+    <Passability>Impassable</Passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <startElectricalFires>true</startElectricalFires>
+        <basePowerConsumption>350</basePowerConsumption>
+        <soundPowerOn>PowerOnSmall</soundPowerOn>
+        <soundPowerOff>PowerOffSmall</soundPowerOff>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>MD2.ITab_Assembly</li>
+    </inspectorTabs>
+  </ThingDef>
+</ThingDefs>

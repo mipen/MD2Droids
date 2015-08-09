@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkGivers>
+
+  <WorkGiverDef>
+    <defName>MD2DroidAssembly</defName>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <verb>construct</verb>
+    <gerund>constructing</gerund>
+    <singleBillGiverDef>MD2DroidAssemblyStation</singleBillGiverDef>
+    <requiredCapacities>
+		<li>Manipulation</li>
+	</requiredCapacities>
+	<priorityInType>30</priorityInType> 
+</WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>MD2DroidGotoRepairStation</defName>
+    <giverClass>MD2.WorkGiver_DroidGotoRepairStation</giverClass>
+    <workType>MD2Maintenance</workType>
+    <verb>repair</verb>
+    <gerund>repairing</gerund>
+    <requiredCapacities>
+      <li>Moving</li>
+    </requiredCapacities>
+    <priorityInType>10</priorityInType>
+  </WorkGiverDef>
+  
+    <WorkGiverDef>
+    <defName>MD2ReactivateDroid</defName>
+    <giverClass>MD2.WorkGiver_ReactivateDroid</giverClass>
+    <workType>Hauling</workType>
+    <verb>reactivate</verb>
+    <gerund>reactivating</gerund>
+    <requiredCapacities>
+      <li>Moving</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <priorityInType>301</priorityInType>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>MD2Cremation</defName>
+    <giverClass>MD2.WorkGiver_Cremation</giverClass>
+    <workType>MD2SpecialistJobs</workType>
+    <verb>cremate</verb>
+    <gerund>cremating</gerund>
+    <requiredCapacities>
+      <li>Moving</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <priorityInType>100</priorityInType>
+  </WorkGiverDef>
+
+  
+</WorkGivers>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Class="MD2.BaseCostDef">
+    <defName>MD2DroidCost</defName>
+    <label>Droid costs</label>
+    <thingClass>Thing</thingClass>
+    <baseCosts>
+      <Steel>60</Steel>
+      <Plasteel>5</Plasteel>
+      <MD2Circuitry>8</MD2Circuitry>
+    </baseCosts>
+    <explosionCost>
+      <Steel>10</Steel>
+    </explosionCost>
+    <passionCost>
+      <Steel>10</Steel>
+    </passionCost>
+    <skillsCost>
+      <Steel>10</Steel>
+    </skillsCost>    
+  </ThingDef>
+
+</Defs>

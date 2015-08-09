@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GameData>
+
+
+  <ThingDef Name="DroidPartBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <MaxHitPoints>100</MaxHitPoints>
+    </statBases>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>1</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <soundInteract>Metal_Drop</soundInteract>
+    <tradeNeverStack>false</tradeNeverStack>
+    <soundDrop>Metal_Drop</soundDrop>
+    <rotatable>false</rotatable>
+    <tradeTags>
+      <li>MD2DroidPart</li>
+    </tradeTags>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+
+
+  <!--=============== Basic power cell ====================-->
+
+
+  <ThingDef ParentName="DroidPartBase">
+    <defName>MD2BasicPowerCell</defName>
+    <label>basic power cell</label>
+    <description>A basic power cell used in droid construction.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>150</MarketValue>
+      <MD2PowerCellMaxStorage>500</MD2PowerCellMaxStorage>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+  </ThingDef>
+
+  <ThingDef ParentName="DroidPartBase">
+    <defName>MD2MediumPowerCell</defName>
+    <label>medium power cell</label>
+    <description>A medium power cell used in droid construction.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>250</MarketValue>
+      <MD2PowerCellMaxStorage>750</MD2PowerCellMaxStorage>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+  </ThingDef>
+
+  <ThingDef ParentName="DroidPartBase">
+    <defName>MD2AdvancedPowerCell</defName>
+    <label>advanced power cell</label>
+    <description>A advanced power cell used in droid construction.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>400</MarketValue>
+      <MD2PowerCellMaxStorage>1000</MD2PowerCellMaxStorage>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+  </ThingDef>
+
+</GameData>

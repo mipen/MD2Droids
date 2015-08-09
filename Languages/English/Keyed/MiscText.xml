@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <DroidWorkOTab>Droid Work</DroidWorkOTab>
+
+  <Alert_DroidPowerCriticallyLowDescription>A droid's power levels have dropped dangerously low! If it is not already, get it headed to a charge pad immediately!</Alert_DroidPowerCriticallyLowDescription>
+
+  <Alert_DroidPowerCriticallyLowLabel>Droid power critically low</Alert_DroidPowerCriticallyLowLabel>
+
+  <Alert_DroidPowerLowDescription>A droid's power levels are getting low. Make sure it does not stray too far from a charge pad.</Alert_DroidPowerLowDescription>
+
+  <Alert_DroidPowerLowLabel>Droid power low</Alert_DroidPowerLowLabel>
+
+  <Deactivated>Deactivated</Deactivated>
+
+  <DroidOutOfPower>Droid out of power</DroidOutOfPower>
+
+  <DeactivatedNoPower>A droid has run out of power and has shut down. Haul it to a repair station to reactivate it.</DeactivatedNoPower>
+
+  <DroidDowned>Droid deactivated</DroidDowned>
+
+  <DeactivatedDowned>A droid has suffered serious damage and has shut down. Haul it to a repair station to reactivate it. This may require materials for the repairs.</DeactivatedDowned>
+
+  <DroidReactivated>{0} has been reactivated!</DroidReactivated>
+
+  <Reactivating>Reactivating {0}</Reactivating>
+
+  <StopReactivationLabel>Stop Reactivation</StopReactivationLabel>
+
+  <StopReactivationDescription>Click to stop the reactivation sequence and drop the deactivated droid.</StopReactivationDescription>
+
+</LanguageData>

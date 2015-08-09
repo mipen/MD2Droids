@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="mipBuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+
+  <!--/////////////////////////////////Charging Pad/////////////////////////////////////////-->
+  <ThingDef ParentName="mipBuildingBase" Class="MD2.ThingDef_RepairStation">
+    <defName>MD2DroidRepairStation</defName>
+    <label>repair station</label>
+    <thingClass>MD2.Building_RepairStation</thingClass>
+    <graphicData>
+      <texPath>Buildings/RepairStation</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <inspectorTabs>
+      <li>MD2.ITab_Droid_Health</li>
+    </inspectorTabs>
+    <altitudeLayer>Waist</altitudeLayer>
+    <repairAmount>3</repairAmount>
+    <repairThingDef>Steel</repairThingDef>
+    <repairCostAmount>10</repairCostAmount>
+    <replacePartsCostsResources>true</replacePartsCostsResources>
+    <ticksPerRepairCycle>180</ticksPerRepairCycle>
+    <building>
+      <wantsHopperAdjacent>true</wantsHopperAdjacent>
+    </building>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToMake>850</WorkToMake>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Droids will flock here to charge themselves.</description>
+    <comps>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <efficiency>1</efficiency>
+        <startElectricalFires>true</startElectricalFires>
+      </li>
+    </comps>
+    <size>(2,1)</size>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.8</fillPercent>
+    <costList>
+      <Steel>200</Steel>
+    </costList>
+    <designationCategory>MD2Droids</designationCategory>
+    <researchPrerequisite>MD2DroidRepairStation</researchPrerequisite>
+    <passability>Impassable</passability>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+  </ThingDef>
+
+</ThingDefs>

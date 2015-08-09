@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<JobDefs>
+  <JobDef>
+    <defName>MD2DroidCremateCorpse</defName>
+    <driverClass>MD2.JobDriver_DroidCremate</driverClass>
+    <reportString>Cremating TargetA.</reportString>
+  </JobDef>
+</JobDefs>

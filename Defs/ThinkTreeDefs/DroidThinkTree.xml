@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThinkTrees>
+
+  <ThinkTreeDef>
+    <defName>MD2DroidThinkTree</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+
+        <!-- Burning response -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>BurningResponse</treeDef>
+        </li>
+        
+        <li Class="ThinkNode_ConditionalColonist">
+          <subNodes>
+          </subNodes>
+        </li>
+
+        <!-- Prisoner -->
+        <li Class="ThinkNode_ConditionalPrisoner">
+          <subNodes>
+            <li Class="JobGiver_PrisonerEscape" />
+            <li Class="JobGiver_PrisonerGetDressed" />
+            <li Class="JobGiver_WanderCurrentRoom">
+              <maxDanger>Deadly</maxDanger>
+            </li>
+            <li Class="JobGiver_IdleError" />
+          </subNodes>
+        </li>
+
+        <!-- Squad brain directives -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>SquadBrainDuty</treeDef>
+        </li>
+
+        <!-- If on colonist team, do forced and emergency work -->
+        <li Class="ThinkNode_ConditionalColonist">
+          <subNodes>
+            <!-- Take direct orders when drafted -->
+            <li Class="JobGiver_Orders" />
+
+            <!-- Queue for forced work -->
+            <li Class="JobGiver_JobQueue" />
+
+            <!-- Seek safe temperatures -->
+            <li Class="JobGiver_SeekSafeTemperature" />
+
+            <li Class="MD2.JobGiver_ChargeCritical"/>
+
+            <!-- Do emergency work -->
+            <li Class="MD2.JobGiver_ForDroids">
+              <emergency>true</emergency>
+            </li>
+
+            <li Class="MD2.JobGiver_ChargeLow"/>
+          </subNodes>
+        </li>
+
+        <!-- Main behavior core-->
+        <li Class="MD2.JobGiver_ForDroids"/>
+
+        <li Class="ThinkNode_ConditionalColonist">
+          <subNodes>
+            <li Class="MD2.JobGiver_ChargeStaySafe"/>
+          </subNodes>
+        </li>
+
+        <!-- Idle wander for colonists -->
+        <li Class="ThinkNode_ConditionalColonist">
+          <subNodes>
+            <li Class="ThinkNode_Tagger">
+              <tagToGive>Idle</tagToGive>
+              <subNodes>
+                <li Class="JobGiver_WanderColony">
+                  <maxDanger>None</maxDanger>
+                </li>
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+
+        <!-- If you're a neutral non-prisoner, exit the map -->
+        <li Class="ThinkNode_ConditionalPrisoner">
+          <invert>true</invert>
+          <subNodes>
+            <li Class="ThinkNode_ConditionalNeutralFaction">
+              <subNodes>
+                <li Class="JobGiver_ExitMapWalkNearest" />
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+
+        <li Class="JobGiver_WanderAnywhere">
+          <maxDanger>None</maxDanger>
+        </li>
+
+        <li Class="JobGiver_WanderAnywhere">
+          <maxDanger>Deadly</maxDanger>
+        </li>
+
+        <li Class="JobGiver_IdleError"/>
+
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+</ThinkTrees>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- ======================= Deactivated droid ========================= -->
+
+  <ThingDef Name="MinifiedBase" Abstract="True">
+    <thingClass>MD2.DeactivatedDroid</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <!-- for CompForbiddable -->
+    <drawerType>RealtimeOnly</drawerType>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <rotatable>false</rotatable>
+    <stackLimit>1</stackLimit>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+  <ThingDef ParentName="MinifiedBase">
+    <defName>MD2DeactivatedDroid</defName>
+    <label>Deactivated Droid</label>
+    <description>A deactivated droid. Haul to a repair station to reactivate.</description>
+    <graphicData>
+      <texPath>Default</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+        <inspectorTabs>
+      <li>MD2.ITab_Droid_Health</li>
+    </inspectorTabs>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+  </ThingDef>
+    <!--<inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>-->
+
+</Defs>

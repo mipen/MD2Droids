@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BodyPartGroupDefs>
+
+  <BodyPartGroupDef>
+    <defName>MD2PlasteelArmourPlating</defName>
+    <label>plasteel armour</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>MD2InternalProcessing</defName>
+    <label>internal processing</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>MD2InternalPowerStorage</defName>
+    <label>internal power storage</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>MD2LeftMechanicalLeg</defName>
+    <label>left mechanical leg</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>MD2RightMechanicalLeg</defName>
+    <label>right mechanical leg</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>MD2LeftMechanicalFoot</defName>
+    <label>left mechanical foot</label>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>MD2RightMechanicalFoot</defName>
+    <label>right mechanical foot</label>
+  </BodyPartGroupDef>
+  
+</BodyPartGroupDefs>

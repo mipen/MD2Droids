@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BlueprintLoad>Load</BlueprintLoad>
+
+  <BlueprintSave>Save</BlueprintSave>
+
+  <BlueprintNeedFileName>You must enter a file name</BlueprintNeedFileName>
+
+  <BlueprintLoaded>Loaded blueprint named {0}</BlueprintLoaded>
+
+  <DeleteBlueprint>Delete this blueprint</DeleteBlueprint>
+
+  <ConfirmDeleteBlueprint>Are you sure you want to delete {0}?</ConfirmDeleteBlueprint>
+
+  <Blueprint_Name>Name</Blueprint_Name>
+
+  <ConfigureBlueprint>Configure blueprint</ConfigureBlueprint>
+
+  <NoWorkPackagesSelected>No work packages selected</NoWorkPackagesSelected>
+
+  <PowerUsage>Droid power usage: {0}W</PowerUsage>
+
+  <PowerRequirement>Power requirement: {0}W</PowerRequirement>
+
+  <Enables>Enables:</Enables>
+
+  <BlueprintEditTooltip>Click to edit the selected work packages in this category</BlueprintEditTooltip>
+
+  <WorkPackages>Work Packages</WorkPackages>
+
+  <ExplodeOnDeath>Explode on death</ExplodeOnDeath>
+
+  <ExplosionRadius>Explosion radius: {0}</ExplosionRadius>
+
+  <StartingSkill>Starting skill: {0}</StartingSkill>
+
+  <Edit>Edit</Edit>
+
+  <Specialisations>Specialisations</Specialisations>
+
+  <AvailablePackages>Available packages</AvailablePackages>
+
+  <SelectedPackages>Selected packages</SelectedPackages>
+
+  <ChooseTexture>Choose texture</ChooseTexture>
+
+  <NoHead>No head</NoHead>
+
+  <Accept>Accept</Accept>
+
+  <PowerUsageTooltip>Displays the amount of power the droid will consume during operation</PowerUsageTooltip>
+
+  <SkillPassion>Passion:</SkillPassion>
+
+  <CostList>Cost list</CostList>
+
+  <MD2WorkAmount>Work amount: {0}</MD2WorkAmount>
+
+</LanguageData>

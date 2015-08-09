@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<KeyBindingDefs>
+
+  <!-- In-game camera -->
+  
+  <KeyBindingDef Name="GameMapKeyBinding" Abstract="true">
+    <category>MD2Keys</category>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="GameMapKeyBinding">
+    <defName>CrematoriusToggleStripBodies</defName>
+    <label>crematorius strip bodies toggle</label>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="GameMapKeyBinding">
+    <defName>MD2DisableDroid</defName>
+    <label>disable droid</label>
+    <defaultKeyCodeA>X</defaultKeyCodeA>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="GameMapKeyBinding">
+    <defName>MD2DeactivateDroid</defName>
+    <label>deactivate droid</label>
+  </KeyBindingDef>
+
+  <KeyBindingDef ParentName="GameMapKeyBinding">
+    <defName>MD2SelfDestructDroid</defName>
+    <label>droid self destruct</label>
+  </KeyBindingDef>
+
+</KeyBindingDefs>

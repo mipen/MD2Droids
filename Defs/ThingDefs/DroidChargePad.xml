@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="mipBuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+
+  <!--/////////////////////////////////Charging Pad/////////////////////////////////////////-->
+  <ThingDef ParentName="mipBuildingBase">
+    <defName>MD2DroidChargePad</defName>
+    <label>Droid Charge Pad</label>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/DroidCharger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>600</WorkToMake>
+      <Beauty>6</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Droids will flock here to charge themselves.</description>
+    <comps>
+      <li>
+        <compClass>MD2.CompDroidCharger</compClass>
+      </li>
+      <li>
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+        <efficiency>1</efficiency>
+        <startElectricalFires>true</startElectricalFires>
+      </li>
+    </comps>
+    <size>(1,1)</size>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.2</fillPercent>
+    <costList>
+      <Steel>120</Steel>
+    </costList>
+    <designationCategory>MD2Droids</designationCategory>
+    <researchPrerequisite>MD2DroidCharger</researchPrerequisite>
+    <passability>Standable</passability>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,0)</interactionCellOffset>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+  </ThingDef>
+
+</ThingDefs>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WorkPackageDefs>
+
+  <WorkPackageDef>
+    <defName>MD2MaintenancePackage</defName>
+    <label>Maintenance Package</label>
+    <description>This package allows the droid to maintain itself. All droids have this package by default.</description>
+    <workTypes>
+      <li>MD2Maintenance</li>
+    </workTypes>
+    <PowerRequirement>0</PowerRequirement>
+    <displayInMenu>false</displayInMenu>
+  </WorkPackageDef>
+
+</WorkPackageDefs>

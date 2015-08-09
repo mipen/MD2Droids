@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkTypeDefs>
+
+  <WorkTypeDef>
+		<defName>MD2Maintenance</defName>
+    <labelShort>Maintenance</labelShort>
+		<pawnLabel>Maintainee</pawnLabel>
+		<gerundLabel>Getting maintenance</gerundLabel>
+		<description>Maintainees go to get repairs done on themselves.</description>
+		<verb>Get repaired at</verb>
+		<naturalPriority>1200</naturalPriority>
+    <alwaysStartActive>false</alwaysStartActive>
+    <visible>false</visible>
+	</WorkTypeDef>
+
+  <WorkTypeDef>
+    <defName>MD2SpecialistJobs</defName>
+    <labelShort>Specialist</labelShort>
+    <pawnLabel>Specialist</pawnLabel>
+    <gerundLabel>Working</gerundLabel>
+    <description>Specialist droids perform specialist tasks.</description>
+    <verb>Work</verb>
+    <naturalPriority>1100</naturalPriority>
+    <alwaysStartActive>false</alwaysStartActive>
+    <visible>false</visible>
+  </WorkTypeDef>
+
+</WorkTypeDefs>

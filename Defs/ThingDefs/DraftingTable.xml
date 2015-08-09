@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="mipBuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructEffect>ConstructMetal</constructEffect>
+    <repairEffect>Repair</repairEffect>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+
+  <!--/////////////////////////////////Drafting Table/////////////////////////////////////////-->
+  <ThingDef ParentName="mipBuildingBase">
+    <defName>MD2DraftingTable</defName>
+    <label>drafting table</label>
+    <description>This table is used to draft up blueprints that are used when building droids.</description>
+    <thingClass>MD2.Building_DraftingTable</thingClass>
+    <graphicData>
+      <texPath>Buildings/RepairStation</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Waist</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.8</Flammability>
+      <WorkToMake>400</WorkToMake>
+      <Beauty>0</Beauty>
+    </statBases>
+    <tickerType>Never</tickerType>
+    <size>(2,1)</size>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <costList>
+      <WoodLog>100</WoodLog>
+      <Steel>50</Steel>
+    </costList>
+    <designationCategory>MD2Droids</designationCategory>
+    <passability>Impassable</passability>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+  </ThingDef>
+
+</ThingDefs>
